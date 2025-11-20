@@ -1,148 +1,129 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Samarth. | Video Editor Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Sticky Navbar -->
+
+  <!-- Navbar -->
   <nav class="navbar glass-card">
     <div class="logo">Samarth.</div>
     <ul>
       <li><a href="#home" class="nav-link">Home</a></li>
       <li><a href="#work" class="nav-link">Work</a></li>
       <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#process" class="nav-link">Process</a></li>
+      <li><a href="#availability" class="nav-link">Availability</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-content">
       <h1>
-        I turn raw clips into
+        I turn raw clips into 
         <span class="gradient-text">scroll-stopping edits</span>
       </h1>
       <p class="subheading">Reels • Music Videos • Cinematic Grades — Bring the song, we build the video.</p>
-      <span class="badge">Free MV — Limited Slots</span>
-      <div class="hero-actions">
+      <div class="hero-buttons">
         <a href="#work" class="btn">See Work</a>
-        <a href="#freemv" class="btn btn-ghost">Apply for Free MV</a>
+        <a href="#freemv" class="btn btn-ghost">Free Music Video Offer</a>
       </div>
     </div>
-    <div class="hero-showreel">
-      <div class="showreel-thumb card-hover glass-card" data-video="videos/showreel.mp4">
-        <img src="https://placehold.co/400x250?text=Showreel+Thumbnail" alt="Showreel" />
-        <span class="play-icon">&#9658;</span>
-      </div>
+    <div class="hero-showreel card-hover glass-card" data-video="media/insta-reel-1.mp4" tabindex="0" aria-label="Play Showreel Video">
+      <img src="media/insta-thumb-1.png" alt="Showreel Thumbnail" />
+      <div class="play-icon" aria-hidden="true">&#9658;</div>
     </div>
   </section>
 
-  <!-- Free Music Video Offer -->
+  <!-- Free Music Video Offer Section -->
   <section id="freemv" class="offer glass-card fade-in">
     <h2>Free Music Video Offer</h2>
     <p>Limited free music-video projects for independent artists — we handle storyboard, lighting, shoot & edit. You bring the song & concept.</p>
     <ul>
-      <li>You bring: song + concept</li>
-      <li>We do: storyboard, shotlist, lighting, shoot, edit, grade</li>
-      <li>Deliverables: HD MV, 30s reel, 3 social clips</li>
+      <li>Storyboard</li>
+      <li>Shot list</li>
+      <li>Lighting</li>
+      <li>Shoot</li>
+      <li>Edit</li>
+      <li>Grade</li>
     </ul>
-    <div class="offer-actions">
+    <p><strong>Deliverables:</strong></p>
+    <ul>
+      <li>Full MV</li>
+      <li>30s reel</li>
+      <li>3 social clips</li>
+    </ul>
+    <div class="offer-buttons">
       <a href="mailto:sam05mtr@gmail.com?subject=Free%20Music%20Video%20Offer" class="btn">Apply Now</a>
       <a href="mailto:sam05mtr@gmail.com" class="btn btn-ghost">Email</a>
     </div>
   </section>
 
-  <!-- Work / Portfolio Section -->
+  <!-- Portfolio - Selected Work -->
   <section id="work" class="portfolio fade-in">
     <h2>Selected Work</h2>
     <div class="portfolio-grid">
-
-      <!-- Instagram Reels -->
-      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-1.mp4">
-        <img src="media/insta-thumb-1.png" alt="Instagram Reel 1" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-1.mp4" tabindex="0" role="button" aria-label="Play Fast-paced and beat-synced visuals">
+        <img src="media/insta-thumb-1.png" alt="Fast-paced and beat-synced visuals" />
         <div class="card-desc">
-          <h3>Instagram Reel #1</h3>
-          <p>Fast-paced and beat-synced visuals.</p>
+          <h3>Fast-paced and beat-synced visuals</h3>
         </div>
       </div>
-
-      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-2.mp4">
-        <img src="media/insta-thumb-2.png" alt="Instagram Reel 2" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-2.mp4" tabindex="0" role="button" aria-label="Play Clean cinematic motion & pacing">
+        <img src="media/insta-thumb-2.png" alt="Clean cinematic motion & pacing" />
         <div class="card-desc">
-          <h3>Instagram Reel #2</h3>
-          <p>Clean cinematic motion & pacing.</p>
+          <h3>Clean cinematic motion & pacing</h3>
         </div>
       </div>
-
-      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-3.mp4">
-        <img src="media/insta-thumb-3.png" alt="Instagram Reel 3" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-3.mp4" tabindex="0" role="button" aria-label="Play Story-driven cuts and transitions">
+        <img src="media/insta-thumb-3.png" alt="Story-driven cuts and transitions" />
         <div class="card-desc">
-          <h3>Instagram Reel #3</h3>
-          <p>Story-driven cuts and transitions.</p>
+          <h3>Story-driven cuts and transitions</h3>
         </div>
       </div>
-
-      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-4.mp4">
-        <img src="media/insta-thumb-4.png" alt="Instagram Reel 4" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-4.mp4" tabindex="0" role="button" aria-label="Play Dynamic editing & smooth flow">
+        <img src="media/insta-thumb-4.png" alt="Dynamic editing & smooth flow" />
         <div class="card-desc">
-          <h3>Instagram Reel #4</h3>
-          <p>Dynamic editing & smooth flow.</p>
+          <h3>Dynamic editing & smooth flow</h3>
         </div>
       </div>
-
-      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-5.mp4">
-        <img src="media/insta-thumb-5.png" alt="Instagram Reel 5" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/insta-reel-5.mp4" tabindex="0" role="button" aria-label="Play Creative transitions & vibrant colorwork">
+        <img src="media/insta-thumb-5.png" alt="Creative transitions & vibrant colorwork" />
         <div class="card-desc">
-          <h3>Instagram Reel #5</h3>
-          <p>Creative transitions & vibrant colorwork.</p>
+          <h3>Creative transitions & vibrant colorwork</h3>
         </div>
       </div>
-
-      <!-- College Fest Reel (FIXED PATH) -->
-      <div class="portfolio-card card-hover glass-card" data-video="media/college-fest-reel-2025.mp4">
-        <img src="https://placehold.co/320x180?text=College+Fest+Reel+2025" alt="College Fest Reel" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/college-fest-reel-2025.mp4" tabindex="0" role="button" aria-label="Play College Fest Reel 2025">
+        <div class="placeholder-thumb">College Fest Reel 2025</div>
         <div class="card-desc">
-          <h3>College Fest Reel (2025)</h3>
-          <p>Fast-paced event highlight • 125K+ views</p>
-          <a class="insta-link"
-             href="https://www.instagram.com/p/your_college_fest_reel/"
-             target="_blank" rel="noopener noreferrer">
-            View reel on Instagram
-          </a>
+          <h3>College Fest Reel 2025</h3>
+          <p>Fast-paced event highlight • 125k+ views</p>
+          <a href="https://www.instagram.com/p/placeholder" target="_blank" rel="noopener noreferrer" class="insta-link">View on Instagram</a>
         </div>
       </div>
-
-      <!-- Color Grading Showcase (FIXED PATH) -->
-      <div class="portfolio-card card-hover glass-card" data-video="media/color-grading-showcase.mp4">
-        <img src="https://placehold.co/320x180?text=Color+Grading+Showcase" alt="Color Grading Showcase" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/color-grading-showcase.mp4" tabindex="0" role="button" aria-label="Play Color Grading Showcase">
+        <div class="placeholder-thumb">Color Grading Showcase</div>
         <div class="card-desc">
           <h3>Color Grading Showcase</h3>
-          <p>Before/after frames and graded shots</p>
-          <a class="insta-link"
-             href="https://www.instagram.com/p/your_color_grading_post/"
-             target="_blank" rel="noopener noreferrer">
-            See grade breakdown
-          </a>
+          <p>Before/after frames & graded shots</p>
+          <a href="https://www.instagram.com/p/placeholder" target="_blank" rel="noopener noreferrer" class="insta-link">See grade breakdown</a>
         </div>
       </div>
-
-      <!-- Sample Work (FIXED PATH) -->
-      <div class="portfolio-card card-hover glass-card" data-video="media/sample-work-1.mp4">
-        <img src="https://placehold.co/320x180?text=Reel+%2F+MV+Sample" alt="Sample Work" />
+      <div class="portfolio-card card-hover glass-card" data-video="media/sample-work-1.mp4" tabindex="0" role="button" aria-label="Play Rhythm-based edit">
+        <div class="placeholder-thumb">Sample MV / Reel</div>
         <div class="card-desc">
-          <h3>Reel / MV Sample</h3>
+          <h3>Sample MV / Reel</h3>
           <p>Rhythm-based edit • Instagram</p>
-          <a class="insta-link"
-             href="https://www.instagram.com/p/your_other_reel/"
-             target="_blank" rel="noopener noreferrer">
-            Watch on Instagram
-          </a>
+          <a href="https://www.instagram.com/p/placeholder" target="_blank" rel="noopener noreferrer" class="insta-link">Watch on Instagram</a>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -155,84 +136,60 @@
           <span class="service-title">Reels</span>
           <p class="service-note">Fast-paced edits with beat sync, hooks and social-first framing.</p>
         </div>
-        <a class="service-btn"
-           href="https://www.instagram.com/samwasafk/"
-           target="_blank" rel="noopener noreferrer">
-          DM to inquire prices
-        </a>
+        <a href="https://www.instagram.com/samwasafk/" target="_blank" rel="noopener noreferrer" class="service-btn">DM to inquire prices</a>
       </div>
-
       <div class="service-item">
         <div>
           <span class="service-title">Music Videos</span>
-          <p class="service-note">End-to-end MV: shot planning, shoot direction, edit and delivery in multiple formats.</p>
+          <p class="service-note">End-to-end music video production including planning, shooting, editing, and delivery.</p>
         </div>
-        <a class="service-btn"
-           href="https://www.instagram.com/samwasafk/"
-           target="_blank" rel="noopener noreferrer">
-          DM to inquire prices
-        </a>
+        <a href="https://www.instagram.com/samwasafk/" target="_blank" rel="noopener noreferrer" class="service-btn">DM to inquire prices</a>
       </div>
-
       <div class="service-item">
         <div>
           <span class="service-title">Color Grading</span>
-          <p class="service-note">DaVinci Resolve grading to fix skin tones, match shots and create a cinematic look for your project.</p>
+          <p class="service-note">DaVinci Resolve-based grading with cinematic looks, perfect skin tones, and scene matching.</p>
         </div>
-        <a class="service-btn"
-           href="https://www.instagram.com/samwasafk/"
-           target="_blank" rel="noopener noreferrer">
-          DM to inquire prices
-        </a>
+        <a href="https://www.instagram.com/samwasafk/" target="_blank" rel="noopener noreferrer" class="service-btn">DM to inquire prices</a>
       </div>
-
       <div class="service-item">
         <div>
           <span class="service-title">Brand Films</span>
-          <p class="service-note">Story-led edits that feel premium but still scroll-friendly and on-brand.</p>
+          <p class="service-note">Story-focused brand films that are premium and engaging.</p>
         </div>
-        <a class="service-btn"
-           href="https://www.instagram.com/samwasafk/"
-           target="_blank" rel="noopener noreferrer">
-          DM to inquire prices
-        </a>
+        <a href="https://www.instagram.com/samwasafk/" target="_blank" rel="noopener noreferrer" class="service-btn">DM to inquire prices</a>
       </div>
     </div>
   </section>
 
-  <!-- How I Edit Section -->
+  <!-- Process Section -->
   <section id="process" class="process glass-card fade-in">
-    <h2>How I Edit</h2>
+    <h2>Process & Tools</h2>
     <div class="process-grid">
       <div class="process-column">
-        <h3>Tools I work with</h3>
-        <p>I primarily edit in DaVinci Resolve for all kinds of videos — reels, music videos and brand work.</p>
-        <p>The color grading is also done in DaVinci Resolve so every shot matches in tone, contrast and mood.</p>
-        <p>I also know Adobe Premiere Pro and Photoshop for timelines, graphics and clean-ups, but DaVinci Resolve stays my main workspace.</p>
+        <h3>Tools I Use</h3>
+        <p>DaVinci Resolve is my primary editing and grading software.</p>
+        <p>Adobe Premiere Pro and Photoshop are secondary tools for graphics and timeline tweaks.</p>
       </div>
       <div class="process-column">
-        <h3>Edit & grade flow</h3>
-        <p>Reels are cut for rhythm and hook retention, keeping every beat intentional and snappy.</p>
-        <p>For narrative and music videos, the focus is story, pacing and a grade that supports the emotion of the track.</p>
-        <p>Once the master is ready, I export platform-ready versions so you can post on Instagram, YouTube and more instantly.</p>
+        <h3>How I Edit</h3>
+        <p>Rhythm-based cuts and hooks for social reels.</p>
+        <p>Narrative pacing and mood for music videos and cinematic projects.</p>
+        <p>Export platform-ready versions optimized per social media needs.</p>
       </div>
     </div>
   </section>
 
-  <!-- Location / Availability -->
+  <!-- Availability Section -->
   <section id="availability" class="availability glass-card fade-in">
-    <h2>Where I Work</h2>
-    <p class="availability-text">
-      I’m available for on-ground shoots if you’re based in the Delhi NCR region.
-    </p>
-    <p class="availability-text">
-      Remote music video and reel projects are also possible if you share a clear concept — I can help build the structure, direct the shots remotely and handle the full edit and grade.
-    </p>
+    <h2>Availability</h2>
+    <p>I am available for on-ground shoots in the Delhi NCR region.</p>
+    <p>Remote projects are possible with a clear concept — I help structure, direct remotely, and deliver polished edits and grades.</p>
   </section>
 
   <!-- Contact Section -->
   <section id="contact" class="contact fade-in">
-    <h2>Let’s collaborate</h2>
+    <h2>Let's Collaborate</h2>
     <a href="mailto:sam05mtr@gmail.com" class="email-link">sam05mtr@gmail.com</a>
   </section>
 
@@ -242,15 +199,14 @@
   </footer>
 
   <!-- Video Lightbox -->
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox-overlay"></div>
+  <div id="lightbox" class="lightbox" aria-modal="true" role="dialog" aria-label="Video Player">
+    <div class="lightbox-overlay" tabindex="-1"></div>
     <div class="lightbox-content">
-      <button class="lightbox-close" aria-label="Close">&times;</button>
-      <video controls id="lightbox-video" poster="https://placehold.co/800x450?text=Video+Preview"></video>
+      <button class="lightbox-close" aria-label="Close video player">&times;</button>
+      <video id="lightbox-video" controls autoplay></video>
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
-
