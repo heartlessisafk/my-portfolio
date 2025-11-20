@@ -54,4 +54,3 @@ document.querySelectorAll('.nav-link').forEach(link => {
     if (target) target.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
